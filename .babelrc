@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "v7.10.0"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-async-to-generator",
+    "transform-object-rest-spread",
+    ["babel-plugin-root-import", {
+      "rootPathSuffix": "src/"
+    }]
+  ]
+}
