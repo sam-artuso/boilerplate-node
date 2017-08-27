@@ -1,4 +1,8 @@
 {
+  "name": "boilerplate-node",
+  "version": "0.1",
+  "description": "A bare bones boilerplate project for Node.js apps and NPM modules.",
+  "main": "dist/index.js",
   "scripts": {
     "start": "node dist/",
     "build": "babel src/ -d dist/",
@@ -7,6 +11,19 @@
     "clean": "rm -rf ./dist",
     "eslint": "eslint ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuele-artuso/boilerplate-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuele-artuso/boilerplate-node/issues"
+  },
+  "keywords": [
+    "node.js",
+    "boilerplate"
+  ],
+  "author": "Sam Artuso <sam@highoctanedev.co.uk>",
+  "license": "MIT",
   "directories": {
     "bin": "./bin",
     "lib": "./src/lib",
