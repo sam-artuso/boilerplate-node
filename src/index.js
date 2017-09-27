@@ -1,6 +1,11 @@
+import dotenv from 'dotenv'
 import { square, timeout } from '~/lib'
 
 console.log('Hello world!')
+
+dotenv.config()
+console.log(`SOME_ENV_VAR = ${process.env.SOME_ENV_VAR}`)
+
 console.log(square(2))
 
 async function f() {

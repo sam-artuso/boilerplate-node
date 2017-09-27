@@ -11,4 +11,3 @@
 
 ## To do
 * Flow
-* dotenv
