@@ -6,6 +6,9 @@
  * ES6 Modules
  * Object rest and spread operators
 * `npm run build:watch`
-* [todo] Flow
 * AirBnB linting
 * Mocha + Chai
+
+## To do
+* Flow
+* dotenv
