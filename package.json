@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/",
     "build": "babel src/ -d dist/",
-    "watch": "nodemon src/index.js --exec babel-node",
+    "watch": "nodemon src/index.js --ignore dist/ --exec babel-node",
     "test": "mocha --compilers js:babel-register \"test/**/*.js\"",
     "clean": "rm -rf ./dist",
     "eslint": "eslint ."
