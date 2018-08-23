@@ -1,14 +1,21 @@
-{
-  "extends": "airbnb/base",
-  "rules": {
-    "semi": ["error", "never"],
-    "max-len": ["error", 120],
-    "import/no-unresolved": ["error", { "ignore": ["\\~"] }],
-    "import/extensions": ["error", { "js": "never" }],
-    "arrow-body-style": [ 0 ]
-  },
-  "env": {
-    "node": true,
-    "mocha": true
-  }
-}
+extends:
+  - airbnb-base
+rules:
+  semi:
+    - error
+    - never
+  max-len:
+    - error
+    - 120
+  import/no-unresolved:
+    - error
+    - ignore:
+      - "\\~"
+  import/extensions:
+    - error
+    - js: never
+  arrow-body-style:
+    - 0
+env:
+  node: true
+  mocha: true
