@@ -7,7 +7,8 @@
     "start": "node dist/",
     "build": "babel src/ -d dist/",
     "watch": "nodemon src/index.js --ignore dist/ --exec babel-node",
-    "test": "mocha --compilers js:babel-register \"test/**/*.js\"",
+    "test": "mocha",
+    "test:watch": "mocha --watch -R min",
     "clean": "rm -rf ./dist",
     "eslint": "eslint ."
   },
@@ -40,7 +41,8 @@
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-mocha": "^4.9.0",
     "mocha": "^3.4.2",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "sinon": "^6.1.5"
   },
   "dependencies": {
     "dotenv": "^4.0.0"
