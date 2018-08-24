@@ -10,7 +10,7 @@
     "test": "mocha",
     "test:watch": "mocha --watch -R min",
     "clean": "rm -rf ./dist",
-    "eslint": "eslint ."
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
