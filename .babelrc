@@ -10,7 +10,6 @@
     ]
   ],
   "plugins": [
-    "transform-async-to-generator",
     "transform-object-rest-spread",
     ["babel-plugin-root-import", {
       "rootPathSuffix": "src/"
