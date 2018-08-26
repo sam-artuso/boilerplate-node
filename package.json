@@ -7,8 +7,8 @@
     "start": "node dist/",
     "build": "babel src/ -d dist/",
     "watch": "nodemon src/index.js --ignore dist/ --exec babel-node",
-    "test": "mocha",
-    "test:watch": "mocha --watch -R min",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "clean": "rm -rf ./dist",
     "lint": "eslint ."
   },
@@ -35,16 +35,14 @@
     "babel-plugin-root-import": "^5.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.5.1",
-    "chai": "^4.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-mocha": "^4.9.0",
-    "mocha": "^3.4.2",
-    "nodemon": "^1.12.1",
-    "sinon": "^6.1.5"
+    "eslint-plugin-jest": "^21.22.0",
+    "jest": "^23.5.0",
+    "nodemon": "^1.12.1"
   },
   "dependencies": {
-    "dotenv": "^4.0.0"
+    "make-promises-safe": "^1.1.0"
   }
 }

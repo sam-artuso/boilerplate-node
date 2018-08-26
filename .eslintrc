@@ -1,5 +1,9 @@
 extends:
   - airbnb-base
+  - plugin:jest/recommended
+plugins:
+  - import
+  - jest
 rules:
   semi:
     - error
@@ -18,4 +22,4 @@ rules:
     - 0
 env:
   node: true
-  mocha: true
+  jest/globals: true

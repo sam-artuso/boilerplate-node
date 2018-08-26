@@ -1,28 +1,11 @@
-import dotenv from 'dotenv'
-import { square, timeout } from '~/lib'
+import 'make-promises-safe'
+import { output, square, timeout } from '~/lib'
 
-console.log('Hello world!')
+(async function main() {
+  output(`2² = ${square(2)}`)
 
-dotenv.config()
-console.log(`SOME_ENV_VAR = ${process.env.SOME_ENV_VAR}`)
-
-console.log(square(2))
-
-async function f() {
-  console.log('Waiting...')
-  await timeout(3000)
-  console.log('Finished!')
-}
-
-f()
-
-const { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 }
-console.log('x =')
-console.log(x)
-console.log('y =')
-console.log(y)
-console.log('z =')
-console.log(z)
-const n = { x, y, ...z }
-console.log('n =')
-console.log(n) // { x: 1, y: 2, a: 3, b: 4 }
+  const delay = 3
+  output(`Waiting for ${delay} seconds...`)
+  await timeout(delay * 1000)
+  output('Finished!')
+}())

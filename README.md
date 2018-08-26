@@ -4,10 +4,9 @@
  * `babel-preset-env` - transpile only ES6 features not available in current version of Node.js.
  * `babel-root-import`
  * ES6 Modules
- * Object rest and spread operators
 * `npm run build:watch`
 * AirBnB linting
-* Mocha + Chai
+* Jest
 
 ## To do
 * Flow
